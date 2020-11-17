@@ -1,0 +1,14 @@
+#更新时间：2020.11.17
+本修改实际使用在Redmi Note 8 Pro
+Rom版本号：miui_BEGONIA_V12.0.3.0.QGGCNXM_42e1368dc7_10.0
+Android版本：10
+miui版本：12
+国内稳定版卡刷包
+修改文件：/system/framework/services.jar
+删除文件：/system/framework/oat/arm64/删除 services.vdex 和 services.odex 
+权限修改：0644（修改services.jar后）
+修改内容：1、用 MT 管理器 打开 services.jar/classes.dex ，选择 Dex编辑器++
+         2、\smali\com\miui\server\SecurityManagerService.smali
+         2、搜索 .method private checkSystemSelfProtection(Z)V 并打开
+         3、删除.line*与.line*之间的内容。
+参考内容：https://moedog.org/1172.html
