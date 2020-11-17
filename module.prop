@@ -1,0 +1,7 @@
+id=MIUILite
+name=MIUI12精简
+version=v1(20.11.17)
+versionCode=201117
+author=酷安@碧雪倾情(自用版)
+description=去除Redmi Note 8 Pro MIUI 12系统无用App，建议搜索查询系统应用用途，定制适合你自己的方案
+minMagisk=1700
